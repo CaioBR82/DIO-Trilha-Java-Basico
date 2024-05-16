@@ -1,18 +1,26 @@
-## Getting Started
+## Projeto Conta Terminal
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+**Desenvolvimento do projeto de conta Terminal que tinha as seguintes demandas:**
 
-## Folder Structure
+Entradas Esperadas
+- Número da Conta: Um número inteiro, por exemplo, 1021
+- Agência: Um texto no formato NNN-N, por exemplo, 067-8
+- Nome do Cliente: Um texto, por exemplo, MARIO ANDRADE
+- Saldo Inicial: Um número decimal, por exemplo, 237.48
 
-The workspace contains two folders by default, where:
+Saída esperada:
+= Olá MARIO ANDRADE, obrigado por criar uma conta em nosso banco, sua agência é 067-8, conta 1021 e seu saldo 237,48 já está disponível para saque.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Modificações em relação à demanda inicial
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- Acrescentadas verificações em relação ao tipo de dados entrados e ao padrão dos mesmo, com mensagem de erro para coreção
+- Acrescida uma linha em branco entre as solicitações de entrad apara dar mais legibilidade ao cliente
+- Acrescido os símbolo de R$ na saída espera, uma vez que estamos falando de dinheiro
+- Linguagem padrão PT-BR
+  
+### OS arquivos estão em duas pastas padrão
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+- src: a pasta para manter os fontes
+- lib: a pasta para manter as dependências
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- **Enquanto isso, os arquivos de saída compilados serão gerados na pasta bin por padrão.**
